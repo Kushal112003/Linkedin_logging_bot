@@ -14,6 +14,8 @@ os.makedirs(log_dir,exist_ok=True)
 log_file_path = os.path.join(log_dir,"linkedin_bot.log")
 
 handler = RotatingFileHandler(log_file_path , maxBytes=500000, backupCount=3)
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+handler.setFormatter(formatter)
 logger = logging.getLogger("LinkedInBot")
 logger.setLevel(logging.INFO)
 logger.addHandler(handler)
