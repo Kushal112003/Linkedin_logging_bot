@@ -1,0 +1,16 @@
+# Ignore credentials
+.env
+
+# Ignore browser driver
+drivers/
+
+# Ignore screenshots
+screenshots/
+
+# Python-related ignore rules
+__pycache__/
+*.pyc
+
+#ignore log files
+
+logs/
